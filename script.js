@@ -112,6 +112,41 @@ function closeReferences() {
   ref.classList.remove("show");
 }
 
+function initOverlay() {
+  const openBtn = document.getElementById('openOverview');
+  const closeBtn = document.getElementById('closeOverview');
+  const overviewModal = document.getElementById('overview');
+
+  if (!openBtn || !overviewModal) return;
+
+  openBtn.onclick = () => {
+    overviewModal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  };
+
+  if (closeBtn) {
+    closeBtn.onclick = () => {
+      overviewModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    };
+  }
+
+  overviewModal.onclick = (e) => {
+    if (e.target === overviewModal) {
+      overviewModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  };
+
+  document.onkeydown = (e) => {
+    if (e.key === 'Escape' && !overviewModal.classList.contains('hidden')) {
+      overviewModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  };
+}
+
+
 
 //Nodes 
 
