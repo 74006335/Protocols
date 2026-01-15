@@ -5089,3 +5089,38 @@ header, nav, .nav-container, .header-container {
     font-size: 1rem;
   }
 }
+
+.protocol-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.protocol-item {
+    margin-bottom: 25px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.protocol-item:before {
+    content: "•";
+    color: #4a90e2; /* or your primary color */
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.protocol-item strong {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.security-overview h2 {
+    margin-bottom: 25px;
+    color: #2c3e50;
+    text-align: center;
+}
