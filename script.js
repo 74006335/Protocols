@@ -33,7 +33,83 @@ document.addEventListener('keydown', function (e) {
 });
 
 
+// ────────────────────────────────────────────────
+// Wait for DOM + Barba ready
+document.addEventListener('DOMContentLoaded', () => {
+  barba.init({
+    debug: true,                  // ← shows logs in console – very helpful!
+    
+    transitions: [{
+      name: 'fade',
+      
+      leave({ current }) {
+        // Fade out old page
+        return gsap.to(current.container, { 
+          opacity: 0, 
+          duration: 0.5,
+          ease: "power2.out"
+        });
+      },
+      
+      enter({ next }) {
+        // Reset scroll + fade in new page
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        gsap.from(next.container, { 
+          opacity: 0, 
+          y: 30, 
+          duration: 0.6,
+          ease: "power2.out"
+        });
+      }
+    }],
 
+    // Re-run your custom JS after each page change
+    views: [
+      {
+        namespace: 'index',
+        afterEnter() {
+          console.log('Index page loaded → run index-specific code');
+          // init your index-specific functions here if needed
+        }
+      },
+      {
+        namespace: 'aspects',
+        afterEnter() {
+          console.log('Aspects page loaded → run aspects-specific code');
+          // Re-init overlay, scroll detection, image hovers, etc.
+          initOverlay();        // ← call your functions again!
+          initScrollDetection();
+        }
+      }
+    ]
+  });
+
+  // Your original functions (overlay, scroll detection, etc.)
+  function initOverlay() {
+    const learnMoreBtn = document.querySelector('.discover-btn');
+    if (!learnMoreBtn) return;
+    // ... rest of your overlay code ...
+  }
+
+  function initScrollDetection() {
+    // ... your wheel/touch/scroll page transition code ...
+  }
+
+  // Run once on first load
+  initOverlay();
+  initScrollDetection();
+});
+
+//refences
+function openReferences() {
+  const ref = document.getElementById("references");
+  ref.classList.add("show");
+}
+
+function closeReferences() {
+  const ref = document.getElementById("references");
+  ref.classList.remove("show");
+}
 
 
 document.addEventListener('DOMContentLoaded', function() {
