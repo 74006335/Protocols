@@ -1,35 +1,37 @@
-const learnMoreBtn = document.querySelector('.discover-btn');
+const learnMoreBtn = document.getElementById('openOverview');
 const overlay = document.getElementById('overview');
 const closeBtn = document.querySelector('.close-btn');
 
 function openOverlay() {
-  overlay.classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
+    overlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
 }
 
 function closeOverlay() {
-  overlay.classList.add('hidden');
-  document.body.style.overflow = '';
+    overlay.classList.add('hidden');
+    document.body.style.overflow = '';
 }
 
+// Event listener for the button
 learnMoreBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  openOverlay();
+    e.preventDefault();
+    openOverlay();
 });
 
 closeBtn.addEventListener('click', closeOverlay);
 
 overlay.addEventListener('click', function (e) {
-  if (e.target === overlay) {
-    closeOverlay();
-  }
+    if (e.target === overlay) {
+        closeOverlay();
+    }
 });
 
 document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
-    closeOverlay();
-  }
+    if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+        closeOverlay();
+    }
 });
+
 
 
 
