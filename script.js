@@ -36,56 +36,55 @@ document.addEventListener('keydown', function (e) {
 
 
 
-// ────────────────────────────────────────────────
-// Wait for DOM + Barba ready
-document.addEventListener('DOMContentLoaded', () => {
-  barba.init({
-    debug: true,                  // ← shows logs in console – very helpful!
+document.addEventListener('DOMContentLoaded', function() {
+    const learnMoreBtn = document.getElementById('openOverview');
+    const overlay = document.getElementById('overview');
+    const closeBtn = document.querySelector('.close-btn');
     
-    transitions: [{
-      name: 'fade',
-      
-      leave({ current }) {
-        // Fade out old page
-        return gsap.to(current.container, { 
-          opacity: 0, 
-          duration: 0.5,
-          ease: "power2.out"
-        });
-      },
-      
-      enter({ next }) {
-        // Reset scroll + fade in new page
-        window.scrollTo({ top: 0, behavior: 'instant' });
-        gsap.from(next.container, { 
-          opacity: 0, 
-          y: 30, 
-          duration: 0.6,
-          ease: "power2.out"
-        });
-      }
-    }],
+    if (!learnMoreBtn || !overlay || !closeBtn) {
+        console.error("Required elements not found!");
+        return;
+    }
+    
+    function openOverlay() {
+        overlay.classList.remove('hidden');
+        document.body.classList.add('no-scroll');
+    }
+    
+    function closeOverlay() {
+        overlay.classList.add('hidden');
+        document.body.classList.remove('no-scroll');
+    }
+    
+    // Open overlay
+    learnMoreBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        openOverlay();
+    });
+    
+    // Close overlay with button
+    closeBtn.addEventListener('click', closeOverlay);
+    
+    // Close overlay when clicking outside content
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closeOverlay();
+        }
+    });
+    
+    // Close overlay with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+            closeOverlay();
+        }
+    });
+    
+    // Prevent scrolling inside overlay content from closing it
+    document.querySelector('.overlay-content').addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+});
 
-    // Re-run your custom JS after each page change
-    views: [
-      {
-        namespace: 'index',
-        afterEnter() {
-          console.log('Index page loaded → run index-specific code');
-          // init your index-specific functions here if needed
-        }
-      },
-      {
-        namespace: 'aspects',
-        afterEnter() {
-          console.log('Aspects page loaded → run aspects-specific code');
-          // Re-init overlay, scroll detection, image hovers, etc.
-          initOverlay();        // ← call your functions again!
-          initScrollDetection();
-        }
-      }
-    ]
-  });
 
   // Your original functions (overlay, scroll detection, etc.)
   function initOverlay() {
