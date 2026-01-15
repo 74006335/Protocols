@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> TLS | Encrypted Data Systems</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+
+  <!-- Styles & Script -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+        
+
+</head>
+
+<body class="innovation-page">
+
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/css@2.1.16/dist/barba-css.umd.js"></script>
+  <div data-barba="container">
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="background-video">
+    <source src="c:\Users\PC\Downloads\port\images\Red and White Dynamic Countdown Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navigation -->
+<nav class="nav-links">
+  <a href="index.html" >Home</a>
+  <a href="aspect.html" >Aspects</a> <!-- Link to innovation page -->
+  <a href="inforgra.html">FHE</a>
+<a href="TLS.html">TLS</a>
+  <a href="post.html" class="active">Qubit</a>
+</nav>
+  <hr>
+
+ <!-- Quantum Hero Section -->
+<section class="quantum-hero">
+    <div class="quantum-grid">
+        <div class="quantum-content">
+            <div class="quantum-badge">
+                <span class="q-badge-version">NIST Selected</span>
+                <span class="q-badge-rfc">PQC Standardization</span>
+            </div>
+            <h1 class="quantum-title">POST-QUANTUM CRYPTOGRAPHY</h1>
+            <p class="quantum-subtitle">Securing Communications Against Quantum Threats</p>
+            <p class="quantum-description">
+                Quantum computers threaten current encryption methods. Post-quantum cryptography 
+                develops new algorithms that are secure against both classical and quantum attacks, 
+                ensuring long-term data protection in the quantum era.
+            </p>
+            <div class="quantum-actions">
+                <button class="q-btn-primary" id="nistBtn">
+                    <i class="fas fa-atom"></i> NIST Standards
+                </button>
+                <button class="q-btn-secondary" id="implBtn">
+                    <i class="fas fa-microchip"></i> Implementation
+                </button>
+            </div>
+        </div>
+        <div class="quantum-visual">
+            <div class="quantum-visualization">
+                <div class="q-node quantum">QUANTUM COMPUTER</div>
+                <div class="q-line">
+                    <div class="q-step">Shor's Algorithm</div>
+                    <div class="q-flow">
+                        <div class="q-particle"></div>
+                        <div class="q-particle"></div>
+                        <div class="q-particle"></div>
+                    </div>
+                    <div class="q-step">PQC Defense</div>
+                </div>
+                <div class="q-node classical">CLASSICAL SECURITY</div>
+                <div class="quantum-indicator">
+                    <span class="q-badge">Quantum-Resistant Algorithms</span>
+                    <span>CRYSTALS-Kyber • CRYSTALS-Dilithium</span>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<!-- Quantum Content Section -->
+<section class="quantum-content-section">
+    <div class="q-section-header">
+        <h2 class="q-section-title">QUANTUM-RESISTANT ALGORITHMS</h2>
+        <p class="q-section-subtitle">Next-Generation Security for the Quantum Era</p>
+    </div>
+
+    <div class="quantum-grid-cards">
+        <!-- Card 1: PQC Overview -->
+        <div class="quantum-card" id="card1">
+            <div class="q-card-header">
+                <div class="q-tech-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="q-card-badge">
+                    <span class="q-status-badge selected">NIST SELECTED</span>
+                    <span class="q-version-badge">2022</span>
+                </div>
+            </div>
+            <div class="q-card-content">
+                <h3 class="q-card-title">PQC Algorithms</h3>
+                <p class="q-card-desc">
+                    New cryptographic systems designed to be secure against quantum computer attacks.
+                </p>
+                
+                <div class="q-features">
+                    <div class="q-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quantum-Resistant</span>
+                    </div>
+                    <div class="q-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Mathematically Hard</span>
+                    </div>
+                    <div class="q-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Standardized</span>
+                    </div>
+                </div>
+
+                <div class="q-algo-list">
+                    <h4>Selected Algorithms:</h4>
+                    <div class="q-algorithms">
+                        <span class="q-algo-tag" data-algo="kyber">CRYSTALS-Kyber</span>
+                        <span class="q-algo-tag" data-algo="dilithium">CRYSTALS-Dilithium</span>
+                        <span class="q-algo-tag" data-algo="falcon">FALCON</span>
+                        <span class="q-algo-tag" data-algo="sphincs">SPHINCS+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="q-card-footer">
+                <button class="q-card-action" onclick="showAlgoDetails()">
+                    <i class="fas fa-info-circle"></i>
+                    Details
+                </button>
+                <button class="q-card-action secondary" onclick="toggleAlgoInfo()">
+                    <i class="fas fa-code"></i>
+                    Specs
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 2: Quantum Threat -->
+        <div class="quantum-card" id="card2">
+            <div class="q-card-header">
+                <div class="q-tech-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="q-card-badge">
+                    <span class="q-status-badge threat">QUANTUM THREAT</span>
+                    <span class="q-version-badge">Active</span>
+                </div>
+            </div>
+            <div class="q-card-content">
+                <h3 class="q-card-title">Quantum Computers</h3>
+                <p class="q-card-desc">
+                    Capable of breaking RSA, ECC, and Diffie-Hellman using quantum algorithms.
+                </p>
+                
+                <div class="q-timeline">
+                    <div class="q-timeline-item">
+                        <span class="q-timeline-year">2019</span>
+                        <span class="q-timeline-desc">Quantum Supremacy</span>
+                    </div>
+                    <div class="q-timeline-item current">
+                        <span class="q-timeline-year" id="quantumTimeline">2025-2030</span>
+                        <span class="q-timeline-desc">Cryptographically Relevant</span>
+                    </div>
+                    <div class="q-timeline-item">
+                        <span class="q-timeline-year">2035+</span>
+                        <span class="q-timeline-desc">Widespread Threat</span>
+                    </div>
+                </div>
+
+                <div class="q-threat-list">
+                    <h4>Vulnerable Algorithms:</h4>
+                    <div class="q-threats">
+                        <span class="q-threat-tag">RSA-2048</span>
+                        <span class="q-threat-tag">ECC-256</span>
+                        <span class="q-threat-tag">Diffie-Hellman</span>
+                        <span class="q-threat-tag">DSA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="q-card-footer">
+                <button class="q-card-action" onclick="showQuantumThreats()">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Threats
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 3: Implementation -->
+        <div class="quantum-card" id="card3">
+            <div class="q-card-header">
+                <div class="q-tech-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="q-card-badge">
+                    <span class="q-status-badge dev">IN DEVELOPMENT</span>
+                    <span class="q-version-badge">Beta</span>
+                </div>
+            </div>
+            <div class="q-card-content">
+                <h3 class="q-card-title">Implementation</h3>
+                <p class="q-card-desc">
+                    Current adoption status and implementation libraries for PQC.
+                </p>
+                
+                <div class="q-stats">
+                    <div class="q-stat-item">
+                        <div class="q-stat-value">4</div>
+                        <div class="q-stat-label">Algorithms</div>
+                    </div>
+                    <div class="q-stat-item">
+                        <div class="q-stat-value">15%</div>
+                        <div class="q-stat-label">Adoption</div>
+                    </div>
+                    <div class="q-stat-item">
+                        <div class="q-stat-value">2024</div>
+                        <div class="q-stat-label">Standards</div>
+                    </div>
+                </div>
+
+                <div class="q-impl-list">
+                    <h4>Libraries:</h4>
+                    <div class="q-impl-items">
+                        <div class="q-impl-item">
+                            <i class="fab fa-github"></i>
+                            <span>Open Quantum Safe</span>
+                        </div>
+                        <div class="q-impl-item">
+                            <i class="fas fa-lock"></i>
+                            <span>liboqs</span>
+                        </div>
+                        <div class="q-impl-item">
+                            <i class="fab fa-google"></i>
+                            <span>BoringSSL</span>
+                        </div>
+                        <div class="q-impl-item">
+                            <i class="fab fa-linux"></i>
+                            <span>OpenSSL 3.0+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="q-card-footer">
+                <button class="q-card-action" onclick="showImplementation()">
+                    <i class="fas fa-download"></i>
+                    Implement
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NIST Quantum Section -->
+    <div class="nist-quantum">
+        <div class="nist-header">
+            <div class="nist-logo">
+                <i class="fas fa-atom"></i>
+                <h3>NIST PQC Standardization</h3>
+            </div>
+            <span class="nist-since">Process Started: 2016</span>
+        </div>
+        
+        <div class="nist-content">
+            <div class="nist-info">
+                <h4>Standardization Process</h4>
+                <p>
+                    NIST's multi-year process to evaluate and standardize quantum-resistant 
+                    cryptographic algorithms, involving global cryptographers and security experts.
+                </p>
+                <div class="nist-image">
+                    <div class="quantum-animation">
+                        <div class="q-ring"></div>
+                        <div class="q-ring"></div>
+                        <div class="q-ring"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nist-details">
+                <h4>Selected Algorithms (July 2022)</h4>
+                <div class="nist-meta">
+                    <div class="nist-meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Announced: July 5, 2022</span>
+                    </div>
+                    <div class="nist-meta-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Category: Public-Key Cryptography</span>
+                    </div>
+                </div>
+                
+                <div class="algorithm-details">
+                    <div class="algo-detail" id="kyberDetail">
+                        <h5>CRYSTALS-Kyber</h5>
+                        <p>Key-establishment algorithm based on lattice problems.</p>
+                    </div>
+                    <div class="algo-detail" id="dilithiumDetail">
+                        <h5>CRYSTALS-Dilithium</h5>
+                        <p>Digital signature algorithm for authentication.</p>
+                    </div>
+                    <div class="algo-detail" id="falconDetail">
+                        <h5>FALCON</h5>
+                        <p>Digital signature algorithm with smaller signatures.</p>
+                    </div>
+                    <div class="algo-detail" id="sphincsDetail">
+                        <h5>SPHINCS+</h5>
+                        <p>Conservative backup using hash-based signatures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quantum Metrics -->
+    <div class="quantum-metrics">
+        <h3 class="q-metrics-title">PQC Characteristics</h3>
+        <div class="q-metrics-grid">
+            <div class="q-metric-card">
+                <div class="q-metric-icon">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+                <h4>Larger Keys</h4>
+                <p>Increased key sizes for quantum resistance</p>
+            </div>
+            <div class="q-metric-card">
+                <div class="q-metric-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h4>New Math</h4>
+                <p>Lattice, code, and hash-based problems</p>
+            </div>
+            <div class="q-metric-card">
+                <div class="q-metric-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h4>Slower</h4>
+                <p>Higher computational overhead</p>
+            </div>
+            <div class="q-metric-card">
+                <div class="q-metric-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h4>Hybrid</h4>
+                <p>Combined classical + PQC approach</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ 
+ <div id="image-popup" class="overlay hidden">
+  <span class="close-btn">✕</span>
+  <img class="popup-img" src="" alt="Popup Image">
+</div>
+</div>
+<div class="references-popup" id="references">
+    <button class="close-btn" onclick="closeReferences()">×</button>
+
+  <h3>References</h3>
+  <ul>
+    <li>Fotios, R., & Athanasios, K. (2023). A Review of Homomorphic Encryption and its Contribution to the Sector of Health Services. <a href="https://dl.acm.org/doi/pdf/10.1145/3635059.3635096" target="_blank">Link</a></li>
+        <li>Suxing, Z., Wei Fu, Wei Hu, & Zhihong S., Tao He, Zhihong Z. (2024). Challenges and Advances in Analyzing TLS 1.3-Encrypted Traffic: A Comprehensive Survey. Electronics, 13(20).</li>
+        <li>Shi, L., Li Cui, & Niu K. (2024). End-to-End Encrypted Message Distribution System for the Internet of Things Based on Conditional Proxy Re-Encryption. Sensors, 24(2), 438.</li>
+        <li>H. Alolaivan, L. Latif, U. Shuaib, A. Razaq, and Q. Xin. (2024). A novel development to encrypt data communication under t-intuitionistic fuzzy environment. PLOS One.</li>
+        <li>ISACA. (2024, May 31). Exploring Practical Considerations and Applications for Privacy Enhancing Technologies. White Papers 2024.</li>
+        <li>Internet Engineering Task Force. (2018, August). The Transport Layer Security (TLS) Protocol Version 1.3 (No. 8446). <a href="https://www.ietf.org/rfc/rfc8446.txt" target="_blank">RFC 8446</a></li>
+        <li>National Institute of Standards and Technology. (2021, October 27). Post-quantum Cryptography: A Q&A with NIST's Matt Scholl. <a href="https://csrc.nist.gov/projects/post-quantum-cryptography" target="_blank">NIST</a></li>
+  </ul>
+</div>
+  </div>
+  <footer class="site-footer">
+        <div class="footer-content">
+            <button class="ref-button" onclick="toggleReferences()">
+                <i class="fas fa-book"></i> References
+            </button>
+            <img src="c:\Users\PC\Downloads\port\images\ecu-logo.png" alt="University Logo" class="footer-logo">
+            <p>
+                <i class="fas fa-user-graduate"></i> Ikram Caffoor | ID: 74006335 | 
+                <a href="mailto:74006335@learning.ecu.edu.lk">
+                    <i class="fas fa-envelope"></i> 74006335@learning.ecu.edu.lk
+                </a>
+            </p>
+            <span>© 2026 ECUSL. Academic Use Only.</span>
+        </div>
+    </footer>
+
+
+</body>
+</html>
