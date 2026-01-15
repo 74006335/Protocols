@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> TLS | Encrypted Data Systems</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+
+  <!-- Styles & Script -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+        
+
+</head>
+
+<body class="innovation-page">
+
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/css@2.1.16/dist/barba-css.umd.js"></script>
+  <div data-barba="container">
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="background-video">
+    <source src="c:\Users\PC\Downloads\port\images\Blue Modern Space Landscape Illustration Live Streaming Announcement Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navigation -->
+<nav class="nav-links">
+  <a href="index.html" >Home</a>
+  <a href="aspect.html" >Aspects</a> <!-- Link to innovation page -->
+  <a href="inforgra.html">FHE</a>
+<a href="TLS.html" class="active">TLS</a>
+  <a href="post.html">Qubit</a>
+</nav>
+
+ 
+
+  <hr>
+
+    <!-- Hero Section -->
+    <section class="cyber-hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="protocol-badge">
+                    <span class="badge-version">v1.3</span>
+                    <span class="badge-rfc">RFC 8446</span>
+                </div>
+                <h1 class="hero-title">TRANSPORT LAYER SECURITY</h1>
+                <p class="hero-subtitle">The Definitive Protocol for Encrypted Communications</p>
+                <p class="hero-description">
+                    TLS 1.3 represents a fundamental redesign of the Transport Layer Security protocol, 
+                    offering enhanced security, improved performance, and privacy by design. Published as 
+                    RFC 8446 by the Internet Engineering Task Force in August 2018.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-primary">
+                        <i class="fas fa-file-pdf"></i> Read RFC 8446
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fas fa-code"></i> View Implementation
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="protocol-visualization">
+                    <div class="visual-node client">CLIENT</div>
+                    <div class="visual-line">
+                        <div class="handshake-step">ClientHello</div>
+                        <div class="encrypted-flow">
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="handshake-step">ServerHello</div>
+                    </div>
+                    <div class="visual-node server">SERVER</div>
+                    <div class="tls-indicator">
+                        <span class="tls-badge">TLS 1.3 Handshake</span>
+                        <span>1-RTT Complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section class="innovation-section">
+        <div class="section-header">
+            <h2 class="section-title">CRYPTOGRAPHIC ADVANCEMENTS</h2>
+            <p class="section-subtitle">Modern Security Protocols and Their Implementations</p>
+        </div>
+
+        <div class="innovation-grid">
+            <!-- Card 1: TLS 1.3 Focus -->
+            <div class="cyber-card" data-tech="tls">
+                <div class="card-header">
+                    <div class="tech-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="card-badge">
+                        <span class="status-badge ietf">IETF STANDARD</span>
+                        <span class="version-badge">RFC 8446</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Transport Layer Security 1.3</h3>
+                    <p class="card-description">
+                        The latest version of TLS protocol providing stronger encryption, 
+                        faster handshakes, and improved security by removing obsolete cryptographic algorithms.
+                    </p>
+                    
+                    <div class="security-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>1-RTT Handshake</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Forward Secrecy</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>0-RTT Resumption</span>
+                        </div>
+                    </div>
+
+                    <div class="protocol-details">
+                        <h4>Key Improvements:</h4>
+                        <ul class="detail-list">
+                            <li>Removed support for weak algorithms (MD5, SHA-1, RC4)</li>
+                            <li>Encrypted handshake messages (except ClientHello)</li>
+                            <li>Mandatory Perfect Forward Secrecy</li>
+                            <li>Simplified cipher suites</li>
+                        </ul>
+                    </div>
+
+                    <div class="ietf-reference">
+                        <div class="rfc-info">
+                            <i class="fas fa-file-alt"></i>
+                            <div>
+                                <strong>RFC 8446</strong>
+                                <span>Published: August 2018</span>
+                            </div>
+                        </div>
+                        <a href="#" class="rfc-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Official Specification
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="card-action">
+                        <i class="fas fa-chart-network"></i>
+                        Protocol Analysis
+                    </button>
+                    <button class="card-action secondary">
+                        <i class="fas fa-download"></i>
+                        Test Suite
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2: Post-Quantum -->
+            <div class="cyber-card" data-tech="pqc">
+                <div class="card-header">
+                    <div class="tech-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <div class="card-badge">
+                        <span class="status-badge research">ACTIVE RESEARCH</span>
+                        <span class="version-badge">NIST Selected</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Post-Quantum Cryptography</h3>
+                    <p class="card-description">
+                        Next-generation cryptographic algorithms designed to withstand attacks 
+                        from quantum computers, ensuring long-term security for TLS implementations.
+                    </p>
+                    
+                    <div class="quantum-timeline">
+                        <div class="timeline-item active">
+                            <span class="timeline-year">2022</span>
+                            <span class="timeline-desc">NIST Selection</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2024</span>
+                            <span class="timeline-desc">Standardization</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2026+</span>
+                            <span class="timeline-desc">Implementation</span>
+                        </div>
+                    </div>
+
+                    <div class="algorithm-list">
+                        <h4>Selected Algorithms:</h4>
+                        <div class="algorithms">
+                            <span class="algo-tag">CRYSTALS-Kyber</span>
+                            <span class="algo-tag">CRYSTALS-Dilithium</span>
+                            <span class="algo-tag">FALCON</span>
+                            <span class="algo-tag">SPHINCS+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="card-action">
+                        <i class="fas fa-shield-check"></i>
+                        Migration Guide
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3: Implementation -->
+            <div class="cyber-card" data-tech="impl">
+                <div class="card-header">
+                    <div class="tech-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="card-badge">
+                        <span class="status-badge production">PRODUCTION READY</span>
+                        <span class="version-badge">v1.3+</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Implementation & Deployment</h3>
+                    <p class="card-description">
+                        Industry adoption and implementation status across major libraries, 
+                        browsers, and operating systems.
+                    </p>
+                    
+                    <div class="adoption-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">98%</div>
+                            <div class="stat-label">Browser Support</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">95%</div>
+                            <div class="stat-label">Top Websites</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">85%</div>
+                            <div class="stat-label">API Services</div>
+                        </div>
+                    </div>
+
+                    <div class="implementation-list">
+                        <h4>Major Implementations:</h4>
+                        <div class="impl-items">
+                            <div class="impl-item">
+                                <i class="fab fa-chrome"></i>
+                                <span>Chrome / BoringSSL</span>
+                            </div>
+                            <div class="impl-item">
+                                <i class="fab fa-firefox"></i>
+                                <span>Firefox / NSS</span>
+                            </div>
+                            <div class="impl-item">
+                                <i class="fab fa-apple"></i>
+                                <span>Apple / SecureTransport</span>
+                            </div>
+                            <div class="impl-item">
+                                <i class="fab fa-linux"></i>
+                                <span>OpenSSL 1.1.1+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="card-action">
+                        <i class="fas fa-server"></i>
+                        Deployment Guide
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- IETF Information Section -->
+        <div class="ietf-section">
+            <div class="ietf-header">
+                <div class="ietf-logo">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Internet Engineering Task Force</h3>
+                </div>
+                <span class="ietf-since">Since 1986</span>
+            </div>
+            
+            <div class="ietf-content">
+                <div class="ietf-mission">
+                    
+                    <h4>Mission Statement</h4>
+                    <p>
+                        The IETF's mission is to produce high quality, relevant technical and 
+                        engineering documents that influence the way people design, use, and 
+                        manage the Internet in such a way as to make the Internet work better.
+                    </p>
+                        <div class="ietf-image">
+        <img src="c:\Users\PC\Downloads\port\images\TLS compare graphic.jpg" alt="IETF Illustration">
+    </div>
+
+                </div>
+                
+                <div class="rfc-detail">
+                    <h4>RFC 8446: TLS Protocol Version 1.3</h4>
+                    <div class="rfc-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Published: August 2018</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Category: Standards Track</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user-edit"></i>
+                            <span>Authors: 15 Contributors</span>
+                        </div>
+                    </div>
+                    
+                    <div class="rfc-abstract">
+                        <h5>Abstract</h5>
+                        <p>
+                            This document specifies version 1.3 of the Transport Layer Security (TLS) protocol. 
+                            TLS allows client/server applications to communicate over the Internet in a way 
+                            that is designed to prevent eavesdropping, tampering, and message forgery.
+                        </p>
+                        <p>
+                            TLS 1.3 is a major revision that improves upon the security, performance, and 
+                            privacy of previous versions. Key changes include removing support for weak 
+                            cryptographic primitives, encrypting more of the handshake, and improving 
+                            resistance to downgrade attacks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Metrics -->
+        <div class="metrics-section">
+            <h3 class="metrics-title">TLS 1.3 Performance Metrics</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h4>300ms Faster</h4>
+                    <p>Average handshake time reduction compared to TLS 1.2</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>100% PFS</h4>
+                    <p>Perfect Forward Secrecy enabled by default</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>50% Less Code</h4>
+                    <p>Reduced attack surface and simplified implementation</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>0-RTT</h4>
+                    <p>Resumed connections without round trips</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+ <div id="image-popup" class="overlay hidden">
+  <span class="close-btn">✕</span>
+  <img class="popup-img" src="" alt="Popup Image">
+</div>
+</div>
+<div class="references-popup" id="references">
+    <button class="close-btn" onclick="closeReferences()">×</button>
+
+  <h3>References</h3>
+  <ul>
+    <li>Fotios, R., & Athanasios, K. (2023). A Review of Homomorphic Encryption and its Contribution to the Sector of Health Services. <a href="https://dl.acm.org/doi/pdf/10.1145/3635059.3635096" target="_blank">Link</a></li>
+        <li>Suxing, Z., Wei Fu, Wei Hu, & Zhihong S., Tao He, Zhihong Z. (2024). Challenges and Advances in Analyzing TLS 1.3-Encrypted Traffic: A Comprehensive Survey. Electronics, 13(20).</li>
+        <li>Shi, L., Li Cui, & Niu K. (2024). End-to-End Encrypted Message Distribution System for the Internet of Things Based on Conditional Proxy Re-Encryption. Sensors, 24(2), 438.</li>
+        <li>H. Alolaivan, L. Latif, U. Shuaib, A. Razaq, and Q. Xin. (2024). A novel development to encrypt data communication under t-intuitionistic fuzzy environment. PLOS One.</li>
+        <li>ISACA. (2024, May 31). Exploring Practical Considerations and Applications for Privacy Enhancing Technologies. White Papers 2024.</li>
+        <li>Internet Engineering Task Force. (2018, August). The Transport Layer Security (TLS) Protocol Version 1.3 (No. 8446). <a href="https://www.ietf.org/rfc/rfc8446.txt" target="_blank">RFC 8446</a></li>
+        <li>National Institute of Standards and Technology. (2021, October 27). Post-quantum Cryptography: A Q&A with NIST's Matt Scholl. <a href="https://csrc.nist.gov/projects/post-quantum-cryptography" target="_blank">NIST</a></li>
+  </ul>
+</div>
+  </div>
+  <footer class="site-footer">
+        <div class="footer-content">
+            <button class="ref-button" onclick="toggleReferences()">
+                <i class="fas fa-book"></i> References
+            </button>
+            <img src="c:\Users\PC\Downloads\port\images\ecu-logo.png" alt="University Logo" class="footer-logo">
+            <p>
+                <i class="fas fa-user-graduate"></i> Ikram Caffoor | ID: 74006335 | 
+                <a href="mailto:74006335@learning.ecu.edu.lk">
+                    <i class="fas fa-envelope"></i> 74006335@learning.ecu.edu.lk
+                </a>
+            </p>
+            <span>© 2026 ECUSL. Academic Use Only.</span>
+        </div>
+    </footer>
+
+
+</body>
+</html>
