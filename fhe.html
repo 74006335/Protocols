@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Fully Homomorphic Encryption | Encrypted Data Systems</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+
+  <!-- Styles & Script -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+
+        
+
+</head>
+
+<body class="innovation-page">
+
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/css@2.1.16/dist/barba-css.umd.js"></script>
+  <div data-barba="container">
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="background-video">
+    <source src="c:\Users\PC\Downloads\port\images\Purple Blue Modern Robot Assitant Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navigation -->
+<nav class="nav-links">
+  <a href="index.html" >Home</a>
+  <a href="aspect.html" class="active">Aspects</a> <!-- Link to innovation page -->
+  <a href="inforgra.html" class="active">FHE</a>
+<a href="TLS.html">TLS</a>
+  <a href="post.html">Qubit</a>
+</nav>
+
+
+  <hr>
+
+  
+  <!-- FHE Hero Section -->
+    <section class="fhe-hero">
+      <div class="container">
+        <h1 class="fhe-title">Fully Homomorphic Encryption</h1>
+        <p class="fhe-subtitle">Compute on encrypted data without ever decrypting it</p>
+        <div class="fhe-tagline">
+          <p>A revolutionary encryption scheme that preserves privacy while enabling computation on sensitive data</p>
+        </div>
+        <a href="#what-is-fhe" class="cta-button">Explore FHE</a>
+      </div>
+    </section>
+
+    <!-- What is FHE Section -->
+    <section id="what-is-fhe" class="fhe-section">
+      <div class="container">
+        <h2 class="section-title">What is Fully Homomorphic Encryption?</h2>
+        <div class="content-grid">
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Definition</h3>
+            <p>FHE allows computations on encrypted data, producing encrypted results that match operations on plaintext when decrypted.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-history"></i>
+            </div>
+            <h3>History</h3>
+            <p>First proposed in 1978, the first working FHE scheme was developed by Craig Gentry in 2009, winning him a MacArthur "Genius Grant".</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-key"></i>
+            </div>
+            <h3>Key Advantage</h3>
+            <p>Enables secure outsourcing of data processing to untrusted servers while maintaining complete data privacy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="fhe-section dark">
+      <div class="container">
+        <h2 class="section-title">How FHE Works</h2>
+        <div class="process-diagram">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h4>Encrypt</h4>
+            <p>Data is encrypted before leaving the client</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h4>Compute</h4>
+            <p>Operations performed on encrypted data</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h4>Return</h4>
+            <p>Encrypted results sent back to client</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h4>Decrypt</h4>
+            <p>Client decrypts final results only</p>
+          </div>
+        </div>
+        
+        <div class="feature-grid">
+          <div class="feature">
+            <i class="fas fa-plus-circle"></i>
+            <h4>Addition Supported</h4>
+            <p>Enc(A) + Enc(B) = Enc(A+B)</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-times-circle"></i>
+            <h4>Multiplication Supported</h4>
+            <p>Enc(A) × Enc(B) = Enc(A×B)</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-infinity"></i>
+            <h4>Unlimited Operations</h4>
+            <p>Both operations can be performed repeatedly</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="fhe-section">
+      <div class="container">
+        <h2 class="section-title">Real-World Applications</h2>
+        <div class="applications-grid">
+          <div class="app-card">
+            <i class="fas fa-cloud"></i>
+            <h3>Secure Cloud Computing</h3>
+            <p>Process sensitive data in public clouds without exposing it to providers</p>
+          </div>
+          <div class="app-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Private ML</h3>
+            <p>Train machine learning models on encrypted datasets</p>
+          </div>
+          <div class="app-card">
+            <i class="fas fa-search"></i>
+            <h3>Encrypted Search</h3>
+            <p>Search through encrypted databases without decryption</p>
+          </div>
+          <div class="app-card">
+            <i class="fas fa-medkit"></i>
+            <h3>Healthcare Analytics</h3>
+            <p>Analyze medical records while maintaining patient privacy</p>
+          </div>
+          <div class="app-card">
+            <i class="fas fa-university"></i>
+            <h3>Financial Analysis</h3>
+            <p>Perform risk assessment on encrypted financial data</p>
+          </div>
+          <div class="app-card">
+            <i class="fas fa-vote-yea"></i>
+            <h3>Secure Voting</h3>
+            <p>Enable private and verifiable electronic voting systems</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section id="demo" class="fhe-section dark">
+      <div class="container">
+        <h2 class="section-title">FHE Interactive Demo</h2>
+        <div class="demo-container">
+          <p class="demo-description">See how FHE allows computation on encrypted values without decryption</p>
+          
+          <div class="demo-controls">
+            <div class="input-group">
+              <label for="value1">First Value:</label>
+              <input type="number" id="value1" value="7" min="0" max="100">
+            </div>
+            
+            <div class="input-group">
+              <label for="value2">Second Value:</label>
+              <input type="number" id="value2" value="4" min="0" max="100">
+            </div>
+            
+            <div class="operation-buttons">
+              <button class="op-btn" data-operation="add">Add</button>
+              <button class="op-btn" data-operation="multiply">Multiply</button>
+              <button class="op-btn" data-operation="complex">Complex Operation</button>
+            </div>
+          </div>
+          
+          <div class="demo-results">
+            <div class="result-row">
+              <span class="result-label">Encrypted Value 1:</span>
+              <span class="result-value" id="enc-val1">E(7)</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Encrypted Value 2:</span>
+              <span class="result-value" id="enc-val2">E(4)</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Operation:</span>
+              <span class="result-value" id="operation">None</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Encrypted Result:</span>
+              <span class="result-value" id="enc-result">E(?)</span>
+            </div>
+            <div class="result-row highlight">
+              <span class="result-label">Decrypted Result:</span>
+              <span class="result-value" id="dec-result">?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ 
+ <div id="image-popup" class="overlay hidden">
+  <span class="close-btn">✕</span>
+  <img class="popup-img" src="" alt="Popup Image">
+</div>
+</div>
+<div class="references-popup" id="references">
+    <button class="close-btn" onclick="closeReferences()">×</button>
+
+  <h3>References</h3>
+  <ul>
+    <li>European Union Agency for Cyber Security. (2024). CRYPTOGRAPHIC PRODUCTS AND SERVICES MARKET ANALYSIS.</li>
+    <li>Fotios, R., & Athanasios, K. (2023). A Review of Homomorphic Encryption and its Contribution to Health Services. <a href="https://dl.acm.org/doi/pdf/10.1145/3635059.3635096" target="_blank">Link</a></li>
+    <li>Suxing, Z., Wei Fu, et al. (2024). Challenges and Advances in Analyzing TLS 1.3-Encrypted Traffic. Electronics, 13(20)</li>
+    <li>Shi, L., Li Cui, & Niu K. (2024). End-to-End Encrypted Message Distribution System. Sensors, 24(2), 438</li>
+    <li>Fotios, R., & Athanasios, K. (2023). A Review of Homomorphic Encryption and its Contribution to the Sector of Health Services. <a href="https://dl.acm.org/doi/pdf/10.1145/3635059.3635096" target="_blank">Link</a></li>
+        <li>Suxing, Z., Wei Fu, Wei Hu, & Zhihong S., Tao He, Zhihong Z. (2024). Challenges and Advances in Analyzing TLS 1.3-Encrypted Traffic: A Comprehensive Survey. Electronics, 13(20).</li>
+        <li>Shi, L., Li Cui, & Niu K. (2024). End-to-End Encrypted Message Distribution System for the Internet of Things Based on Conditional Proxy Re-Encryption. Sensors, 24(2), 438.</li>
+        <li>H. Alolaivan, L. Latif, U. Shuaib, A. Razaq, and Q. Xin. (2024). A novel development to encrypt data communication under t-intuitionistic fuzzy environment. PLOS One.</li>
+        <li>ISACA. (2024, May 31). Exploring Practical Considerations and Applications for Privacy Enhancing Technologies. White Papers 2024.</li>
+        <li>Internet Engineering Task Force. (2018, August). The Transport Layer Security (TLS) Protocol Version 1.3 (No. 8446). <a href="https://www.ietf.org/rfc/rfc8446.txt" target="_blank">RFC 8446</a></li>
+        <li>National Institute of Standards and Technology. (2021, October 27). Post-quantum Cryptography: A Q&A with NIST's Matt Scholl. <a href="https://csrc.nist.gov/projects/post-quantum-cryptography" target="_blank">NIST</a></li>
+  </ul>
+</div>
+  </div>
+  
+<footer class="site-footer">
+        <div class="footer-content">
+            <button class="ref-button" onclick="toggleReferences()">
+                <i class="fas fa-book"></i> References
+            </button>
+            <img src="c:\Users\PC\Downloads\port\images\ecu-logo.png" alt="University Logo" class="footer-logo">
+            <p>
+                <i class="fas fa-user-graduate"></i> Ikram Caffoor | ID: 74006335 | 
+                <a href="mailto:74006335@learning.ecu.edu.lk">
+                    <i class="fas fa-envelope"></i> 74006335@learning.ecu.edu.lk
+                </a>
+            </p>
+            <span>© 2026 ECUSL. Academic Use Only.</span>
+        </div>
+    </footer>
+
+
+</body>
+</html>
