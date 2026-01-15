@@ -44,33 +44,36 @@
                     Discover how cutting-edge protocols are reshaping security across industries, 
                     enabling trust in an interconnected world.
                 </p>
-                
-         <button class="overview-btn" id="openOverview">
+                </div>
+      <button class="overview-btn" id="openOverview">
     <i class="fas fa-shield-alt"></i> View Security Overview
 </button>
 
-<!-- The overlay/modal container -->
+<!-- Overlay container -->
 <div class="overlay hidden" id="overview">
     <div class="overlay-content">
-        <button class="close-btn" aria-label="Close overview">×</button> 
-
-           <div class="security-overview">
-                
+        <div class="overlay-header">
             <h2>Encrypted Data Protocols Overview</h2>
-            
-                   <div class="overlay-body">
+            <button class="close-btn" aria-label="Close overview">×</button>
+        </div>
+        
+        <div class="overlay-body">
             <ul class="protocol-list">
                 <li class="protocol-item">
-                    <strong>Foundation of Digital Trust:</strong> Modern encryption protocols establish trust in digital interactions by ensuring confidentiality, integrity, and authenticity of data across all transmission and storage mediums.
+                    <div class="protocol-title">Foundation of Digital Trust</div>
+                    <p class="protocol-description">Modern encryption protocols establish trust in digital interactions by ensuring confidentiality, integrity, and authenticity of data across all transmission and storage mediums.</p>
                 </li>
                 <li class="protocol-item">
-                    <strong>Homomorphic Encryption Breakthrough:</strong> Allows computation on ciphertext, generating encrypted results that, when decrypted, match operations performed on the plaintext. This enables secure outsourcing of data processing.
+                    <div class="protocol-title">Homomorphic Encryption Breakthrough</div>
+                    <p class="protocol-description">Allows computation on ciphertext, generating encrypted results that, when decrypted, match operations performed on the plaintext. This enables secure outsourcing of data processing.</p>
                 </li>
                 <li class="protocol-item">
-                    <strong>Collaborative Security:</strong> MPC protocols enable multiple parties to jointly compute a function over their inputs while keeping those inputs private, revolutionizing sectors requiring confidential collaboration.
+                    <div class="protocol-title">Collaborative Security</div>
+                    <p class="protocol-description">MPC protocols enable multiple parties to jointly compute a function over their inputs while keeping those inputs private, revolutionizing sectors requiring confidential collaboration.</p>
                 </li>
                 <li class="protocol-item">
-                    <strong>Quantum Preparedness:</strong> With quantum computing advances, post-quantum cryptography ensures existing encrypted data remains secure against future quantum attacks, providing forward secrecy.
+                    <div class="protocol-title">Quantum Preparedness</div>
+                    <p class="protocol-description">With quantum computing advances, post-quantum cryptography ensures existing encrypted data remains secure against future quantum attacks, providing forward secrecy.</p>
                 </li>
             </ul>
         </div>
