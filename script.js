@@ -1,36 +1,37 @@
-const learnMoreBtn = document.getElementById('openOverview');
+const learnMoreBtn = document.querySelector('.discover-btn');
 const overlay = document.getElementById('overview');
 const closeBtn = document.querySelector('.close-btn');
 
 function openOverlay() {
-    overlay.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
+  overlay.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeOverlay() {
-    overlay.classList.add('hidden');
-    document.body.style.overflow = '';
+  overlay.classList.add('hidden');
+  document.body.style.overflow = '';
 }
 
-// Event listener for the button
 learnMoreBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    openOverlay();
+  e.preventDefault();
+  openOverlay();
 });
 
 closeBtn.addEventListener('click', closeOverlay);
 
 overlay.addEventListener('click', function (e) {
-    if (e.target === overlay) {
-        closeOverlay();
-    }
+  if (e.target === overlay) {
+    closeOverlay();
+  }
 });
 
 document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
-        closeOverlay();
-    }
+  if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+    closeOverlay();
+  }
 });
+
+
 
 
 // ────────────────────────────────────────────────
@@ -110,167 +111,6 @@ function closeReferences() {
   const ref = document.getElementById("references");
   ref.classList.remove("show");
 }
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const learnMoreBtn = document.getElementById('openOverview');
-    const overlay = document.getElementById('overview');
-    const closeBtn = document.querySelector('.close-btn');
-    
-    if (!learnMoreBtn || !overlay || !closeBtn) {
-        console.error("Required elements not found!");
-        return;
-    }
-    
-    function openOverlay() {
-        overlay.classList.remove('hidden');
-        document.body.classList.add('no-scroll');
-    }
-    
-    function closeOverlay() {
-        overlay.classList.add('hidden');
-        document.body.classList.remove('no-scroll');
-    }
-    
-    // Open overlay
-    learnMoreBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        openOverlay();
-    });
-    
-    // Close overlay with button
-    closeBtn.addEventListener('click', closeOverlay);
-    
-    // Close overlay when clicking outside content
-    overlay.addEventListener('click', function(e) {
-        if (e.target === overlay) {
-            closeOverlay();
-        }
-    });
-    
-    // Close overlay with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
-            closeOverlay();
-        }
-    });
-    
-    // Prevent scrolling inside overlay content from closing it
-    document.querySelector('.overlay-content').addEventListener('click', function(e) {
-        e.stopPropagation();
-    });
-});
-
-
-  // Your original functions (overlay, scroll detection, etc.)
-  function initOverlay() {
-    const learnMoreBtn = document.querySelector('.discover-btn');
-    if (!learnMoreBtn) return;
-    // ... rest of your overlay code ...
-  }
-
-  function initScrollDetection() {
-    // ... your wheel/touch/scroll page transition code ...
-  }
-
-  // Run once on first load
-  initOverlay();
-  initScrollDetection();
-});
-
-//refences
-function openReferences() {
-  const ref = document.getElementById("references");
-  ref.classList.add("show");
-}
-
-function closeReferences() {
-  const ref = document.getElementById("references");
-  ref.classList.remove("show");
-}
-
-function initOverlay() {
-  const openBtn = document.getElementById('openOverview');
-  const closeBtn = document.getElementById('closeOverview');
-  const overviewModal = document.getElementById('overview');
-
-  if (!openBtn || !overviewModal) return;
-
-  openBtn.onclick = () => {
-    overviewModal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-  };
-
-  if (closeBtn) {
-    closeBtn.onclick = () => {
-      overviewModal.classList.add('hidden');
-      document.body.style.overflow = '';
-    };
-  }
-
-  overviewModal.onclick = (e) => {
-    if (e.target === overviewModal) {
-      overviewModal.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-  };
-
-  document.onkeydown = (e) => {
-    if (e.key === 'Escape' && !overviewModal.classList.contains('hidden')) {
-      overviewModal.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-  };
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    const learnMoreBtn = document.getElementById('openOverview');
-    const overlay = document.getElementById('overview');
-    const closeBtn = document.querySelector('.close-btn');
-    
-    if (!learnMoreBtn || !overlay || !closeBtn) {
-        console.error("Required elements not found!");
-        return;
-    }
-    
-    function openOverlay() {
-        overlay.classList.remove('hidden');
-        document.body.classList.add('no-scroll');
-    }
-    
-    function closeOverlay() {
-        overlay.classList.add('hidden');
-        document.body.classList.remove('no-scroll');
-    }
-    
-    // Open overlay
-    learnMoreBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        openOverlay();
-    });
-    
-    // Close overlay with button
-    closeBtn.addEventListener('click', closeOverlay);
-    
-    // Close overlay when clicking outside content
-    overlay.addEventListener('click', function(e) {
-        if (e.target === overlay) {
-            closeOverlay();
-        }
-    });
-    
-    // Close overlay with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
-            closeOverlay();
-        }
-    });
-    
-    // Prevent scrolling inside overlay content from closing it
-    document.querySelector('.overlay-content').addEventListener('click', function(e) {
-        e.stopPropagation();
-    });
-});
 
 
 
