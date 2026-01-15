@@ -148,6 +148,55 @@ function initOverlay() {
   };
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const learnMoreBtn = document.getElementById('openOverview');
+    const overlay = document.getElementById('overview');
+    const closeBtn = document.querySelector('.close-btn');
+    
+    if (!learnMoreBtn || !overlay || !closeBtn) {
+        console.error("Required elements not found!");
+        return;
+    }
+    
+    function openOverlay() {
+        overlay.classList.remove('hidden');
+        document.body.classList.add('no-scroll');
+    }
+    
+    function closeOverlay() {
+        overlay.classList.add('hidden');
+        document.body.classList.remove('no-scroll');
+    }
+    
+    // Open overlay
+    learnMoreBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        openOverlay();
+    });
+    
+    // Close overlay with button
+    closeBtn.addEventListener('click', closeOverlay);
+    
+    // Close overlay when clicking outside content
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closeOverlay();
+        }
+    });
+    
+    // Close overlay with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+            closeOverlay();
+        }
+    });
+    
+    // Prevent scrolling inside overlay content from closing it
+    document.querySelector('.overlay-content').addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+});
+
 
 
 //Nodes 
