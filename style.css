@@ -2647,44 +2647,39 @@ body {
 }
 
 /*===*/
-/* Container to keep everything aligned */
-.figure-container {
+/* This centers the entire block on your page */
+.figure-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    /* This centers everything horizontally */
+    justify-content: center;
+    width: 100%;
     margin: 20px 0;
 }
 
-/* Title Styling */
 .image-title {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
     text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;    /* Space between title and image */
     color: #333;
 }
 
-/* Image Container */
 .hero-video img {
-    max-width: 100%;
-    height: auto;
     display: block;
+    max-width: 100%;        /* Keeps image responsive */
+    height: auto;
+    margin: 0 auto;
 }
 
-/* Caption Styling (Based on your requirements) */
 .image-caption {
-    position: static;           /* Removes absolute positioning */
-    text-align: center;         /* Centers the text */
+    position: static;       /* Ensures it stays below the image */
+    text-align: center;     /* Centers the text */
     font-size: 0.9rem;
-    color: #555;                /* Dark grey text */
-    background: none;           /* Removes black overlay */
-    padding: 5px 0;             /* Vertical spacing */
-    margin-top: 8px;            /* Gap between image and caption */
-    border-radius: 0;
-}
-
-.image-caption i {
-    margin-right: 5px;          /* Space for the lock icon */
+    color: #555;            /* Dark grey for readability */
+    background: none;       /* Removes any black box/overlay */
+    padding: 10px 0;
+    margin-top: 5px;        /* Space between image and caption */
 }
 
 
