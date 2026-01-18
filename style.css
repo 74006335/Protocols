@@ -2647,17 +2647,16 @@ body {
 }
 
 .image-caption {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    text-align: center;
+    position: static;           /* remove absolute positioning */
+    text-align: center;         /* center the text */
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 4px;
+    color: #555;                /* darker text, no background overlay */
+    background: none;           /* remove black overlay */
+    padding: 5px 0;             /* small padding above/below */
+    margin-top: 5px;            /* space between image and caption */
+    border-radius: 0;           /* optional: remove rounded corners */
 }
+
 
 /* ===== INNOVATIONS GRID ===== */
 .section-title {
