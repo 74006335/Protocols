@@ -5322,10 +5322,13 @@ body.no-scroll {
 }
 
 .image-title {
-    font-size: 1.3rem;       /* Slightly bigger */
-    font-weight: bold;       
-    margin-bottom: 10px;     /* Space between title and image */
+    font-size: 1.3rem;        /* Bigger font */
+    font-weight: bold;
+    text-align: center;        /* Center the text */
+    margin: 0 auto 10px auto;  /* Auto left/right margin, 10px space below */
+    display: block;            /* Ensure it behaves like a block element */
 }
+
 
 .image-caption {
     font-size: 0.9rem;
