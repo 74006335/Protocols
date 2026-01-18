@@ -5312,21 +5312,25 @@ body.no-scroll {
 }
 
 
+
+
+
+
 .hero-video {
-    text-align: center;
+    text-align: center;      /* Center everything inside */
     margin: 20px 0;
 }
 
 .image-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 1.3rem;       /* Slightly bigger */
+    font-weight: bold;       
+    margin-bottom: 10px;     /* Space between title and image */
 }
 
 .image-caption {
     font-size: 0.9rem;
     color: #555;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .image-source {
