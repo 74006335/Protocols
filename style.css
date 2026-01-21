@@ -118,58 +118,63 @@ body::before {
 /* ===== HERO SECTION ===== */
 .hero {
   display: flex;
-  justify-content: space-between; /* text left, image right */
-  align-items: flex-start;        /* align top of both text and image */
-  gap: 50px;                      /* spacing between text and image */
-  padding: 60px 50px 60px 120px;  /* reduce top padding for higher placement */
-  position: relative;
-  z-index: 5;
-  max-width: 1200px;
+  justify-content: flex-start;  /* text left, image can come later if needed */
+  padding: 60px 80px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 /* ===== HERO TEXT AREA ===== */
 .hero-content {
-  flex: 1;             /* take available width */
-  max-width: 60%;      /* leave space for image */
+  width: 100%;       /* full width for vertical stacking */
 }
 
+/* Heading */
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: 'Inter', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   margin-bottom: 15px;
-  position: relative;
-  overflow: hidden;
-
-  /* make text look shiny */
-  background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.2) 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 2s linear infinite;
 }
 
-@keyframes shine {
-  0% { background-position: 100% center; }
-  100% { background-position: -100% center; }
-}
-
-
-
+/* Subheading */
 .hero h2 {
-  font-size: 1.8rem;
-  font-family: 'Poppins', sans-serif; /* modern font */
-  font-weight: 600;
-  margin-bottom: 15px;
-  
-  /* Gradient Text */
-  background: linear-gradient(90deg, #254dfc, #d3e4ff, #a5b4fc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #d3e4ff;
+}
 
-  text-shadow: 0 0 6px rgba(0,0,0,0.5);
+/* Paragraph */
+.hero p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Features - stacked vertically */
+.hero-features {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  gap: 15px;                /* spacing between features */
+}
+
+.hero-features span {
+  background: rgba(138, 43, 226, 0.15);
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-features i {
+  color: #8a2be2;
+  margin-right: 10px;
 }
 
 
