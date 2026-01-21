@@ -2649,41 +2649,51 @@ body {
 /*===*/
 /* This centers the entire block on your page */
 /* Center the entire figure */
+/* Center the whole figure block */
 .figure-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 20px 0;
+    margin: 24px 0;
 }
 
-/* Group title + source */
-.figure-header {
-    text-align: center;
-    margin-bottom: 12px; /* space before image */
-}
-
-/* Figure title */
+/* Heading above image */
 .image-title {
+    text-align: center;
     font-size: 1.1rem;
-    font-weight: bold;
-    margin: 0;
-    color: #333;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #eaeaea; /* adjust for dark background */
 }
 
-/* Source text */
-.image-caption {
-    font-size: 0.9rem;
-    color: #777;
-    margin-top: 4px;
-}
-
-/* Image styling */
+/* Image */
 .hero-video img {
     display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 10px; /* optional, matches your UI */
 }
+
+/* Source below image */
+.image-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+/* Optional: source link style */
+.image-caption a {
+    color: #9b6cff;
+    text-decoration: none;
+}
+
+.image-caption a:hover {
+    text-decoration: underline;
+}
+
 
 
 
