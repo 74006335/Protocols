@@ -2582,24 +2582,7 @@ body {
     margin: 15px 0 25px;
 }
 
-.hero-features {
-    display: flex;
-    gap: 20px;
-    margin: 25px 0;
-    flex-wrap: wrap;
-}
 
-.hero-features span {
-    background: rgba(138, 43, 226, 0.15);
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.hero-features i {
-    color: #8a2be2;
-    margin-right: 8px;
-}
 
 /*===*/
 /* This centers the entire block on your page */
@@ -2921,6 +2904,74 @@ body {
     .section-title {
         font-size: 2.2rem;
     }
+
+  /*jsidsdospdfsdf*/
+  /* ===== HERO SECTION ===== */
+.hero {
+  display: flex;
+  justify-content: space-between; /* text left, image right */
+  align-items: flex-start;        /* align top of both text and image */
+  gap: 50px;                      /* spacing between text and image */
+  padding: 60px 80px;             /* simpler padding */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HERO TEXT AREA ===== */
+.hero-content {
+  flex: 1;             /* take available width */
+  max-width: 55%;      /* leave more space for image */
+}
+
+/* Main Heading */
+.hero h1 {
+  font-size: 3rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+/* Subheading */
+.hero h2 {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #d3e4ff;
+}
+
+/* Paragraph */
+.hero p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Features */
+.hero-features {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-features span {
+  background: rgba(138, 43, 226, 0.15);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-features i {
+  color: #8a2be2;
+  margin-right: 6px;
+}
+
     
     .hero {
         flex-direction: column;
