@@ -2650,47 +2650,64 @@ body {
 /* This centers the entire block on your page */
 /* Center the entire figure */
 /* Center the whole figure block */
+/* ===== FIGURE WRAPPER (RIGHT SIDE) ===== */
 .figure-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;   /* push figure to the right */
     width: 100%;
     margin: 24px 0;
 }
 
-/* Heading above image */
-.image-title {
+/* ===== FIGURE BLOCK ===== */
+.figure-block {
+    width: 340px;               /* slightly smaller */
     text-align: center;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: #eaeaea; /* adjust for dark background */
 }
 
-/* Image */
-.hero-video img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* optional, matches your UI */
-}
-
-/* Source below image */
-.image-caption {
-    text-align: center;
+/* ===== FIGURE TITLE (ABOVE IMAGE) ===== */
+.figure-title {
     font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #eaeaea;
+}
+
+/* ===== IMAGE CONTAINER (NEON GLOW) ===== */
+.figure-image {
+    padding: 6px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #7a3cff, #b46cff);
+    box-shadow:
+        0 0 20px rgba(138, 43, 226, 0.8),
+        0 0 40px rgba(138, 43, 226, 0.6);
+}
+
+/* ===== IMAGE ===== */
+.figure-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+
+    /* FLIP IMAGE */
+    transform: scaleX(-1);
+}
+
+/* ===== SOURCE (BELOW IMAGE) ===== */
+.figure-source {
+    font-size: 0.75rem;
     color: #aaa;
     margin-top: 8px;
     line-height: 1.4;
 }
 
-/* Optional: source link style */
-.image-caption a {
+/* ===== SOURCE LINK ===== */
+.figure-source a {
     color: #9b6cff;
     text-decoration: none;
 }
 
-.image-caption a:hover {
+.figure-source a:hover {
     text-decoration: underline;
 }
 
